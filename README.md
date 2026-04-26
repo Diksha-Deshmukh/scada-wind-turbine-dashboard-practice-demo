@@ -90,3 +90,65 @@ This project is deliberately minimal to let you build upon it.  Potential enhanc
 * Deploy with Docker Compose or Kubernetes, connecting the .NET service, a database container and the React app.
 
 Feel free to fork this repository and customise it to your needs when presenting to recruiters or colleagues.  A working implementation demonstrates your ability to design a modern web application with separate backend and frontend layers, real‑time data ingestion and visualisation, and proper data persistence.
+
+
+
+
+
+🚀 Future Improvements
+
+This project is actively evolving. The following enhancements are planned to make it more powerful and closer to a production-grade SCADA system:
+
+🔄 Real-Time Data Updates
+
+Currently, the dashboard displays simulated/static data.
+Future updates will include auto-refresh/polling to fetch new data at regular intervals (e.g., every 5 seconds), providing a near real-time monitoring experience.
+
+⚡ Live Data Streaming
+
+To achieve true real-time behavior, the system will be upgraded using:
+
+SignalR (for .NET backend)
+or WebSockets
+
+This will allow instant updates without page refresh, similar to real industrial SCADA systems.
+
+📊 Additional KPIs
+
+The dashboard will be enhanced with more key performance indicators, such as:
+
+Turbine Efficiency
+Rotor RPM
+Availability/Uptime
+Energy Production
+
+These metrics will provide deeper insights into turbine performance.
+
+🚨 Advanced Alarm System
+
+The alert system will be improved to include:
+
+Configurable threshold values
+Multiple severity levels (info, warning, critical)
+Alarm acknowledgment & history tracking
+
+This will make the monitoring system more robust and closer to real-world applications.
+
+🎨 UI/UX Enhancements
+
+Planned UI improvements include:
+
+Modern dark theme with gradients
+Smooth animations and transitions
+Gauge charts and advanced visualizations
+Improved layout for better usability
+🌐 Scalability & Deployment
+
+Future versions may include:
+
+Multi-turbine monitoring dashboard
+Cloud deployment (Azure / Docker / IIS)
+Production-ready architecture
+💡 Vision
+
+The goal is to evolve this project into a full-featured, production-grade SCADA dashboard for wind turbine monitoring with real-time capabilities, advanced analytics, and scalable architecture.
