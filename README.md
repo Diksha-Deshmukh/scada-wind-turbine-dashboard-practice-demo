@@ -79,23 +79,7 @@ single_turbine_dashboard/
 
    The React app will run on `http://localhost:3000` and proxy API requests to the backend (see `package.json`).  Browse to `http://localhost:3000` to view the dashboard.
 
-## Extending this template
-
-This project is deliberately minimal to let you build upon it.  Potential enhancements include:
-
-* Use a message queue (e.g. RabbitMQ, Kafka) to decouple telemetry ingestion from the API.
-* Swap SQLite for SQL Server, PostgreSQL or another database provider and add proper migrations.
-* Replace the custom canvas charts with a charting library (Chart.js, Recharts, D3) for richer visualisation.
-* Add authentication (JWT, Azure AD) and user roles to secure the dashboard.
-* Deploy with Docker Compose or Kubernetes, connecting the .NET service, a database container and the React app.
-
-<<<<<<< HEAD
-Feel free to fork this repository and customise it to your needs when presenting to recruiters or colleagues.  A working implementation demonstrates your ability to design a modern web application with separate backend and frontend layers, real‑time data ingestion and visualisation, and proper data persistence.
-=======
-Feel free to fork this repository and customise it to your needs when presenting to recruiters or colleagues.  A working implementation demonstrates your ability to design a modern web application with separate backend and frontend layers, real‑time data ingestion and visualisation, and proper data persistence.
-
-
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 🚀 Future Improvements
