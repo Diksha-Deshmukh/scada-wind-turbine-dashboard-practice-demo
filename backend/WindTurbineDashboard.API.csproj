@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <!--
+      Target the .NET 10 runtime. According to the official .NET documentation, the
+      TargetFramework property value (for example, net10.0) is an alias that the
+      .NET SDK translates into canonical moniker properties such as
+      .NETCoreApp,Version=v10.0【402692835725933†L681-L694】.  Using net10.0 here ensures
+      our API compiles against the .NET 10 libraries and enables modern C# and
+      ASP.NET Core features available in the 2026 release cycle.
+    -->
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <!--
+      Upgrade packages to versions that support .NET 10.  Each of these
+      libraries publishes a major version aligned with the .NET runtime.  For
+      example, Swashbuckle.AspNetCore version 10.0 targets net10.0 and can be
+      referenced directly in the project file【904673730498587†L25-L56】.  Likewise,
+      the Entity Framework Core design‑time and SQLite packages version 10.0.0
+      target .NET 10.0【286286870495565†L25-L31】【554151773856899†L29-L31】.  The
+      Newtonsoft.Json integration package also publishes a 10.0.0 version for
+      ASP.NET Core 10【691123826140450†L25-L31】.
+    -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="10.0.0" />
+  </ItemGroup>
+</Project>
