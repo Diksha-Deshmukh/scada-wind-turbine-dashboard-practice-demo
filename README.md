@@ -4,7 +4,7 @@ This repository contains a simplified monitoring dashboard for a **single wind t
 
 ## Key features
 
-* **.NET 10 minimal API backend** – The backend targets .NET 10 using the `net10.0` TargetFramework.  The .NET documentation notes that values like `net10.0` are aliases translated by the SDK into canonical moniker properties for .NET 10【402692835725933†L681-L694】.  The API exposes endpoints to ingest telemetry, retrieve the single turbine, fetch its telemetry history and list recent alarms.
+* **.NET 10 minimal API backend** – The backend targets .NET 10 using the `net10.0` TargetFramework.  The .NET documentation notes that values like `net10.0` are aliases translated by the SDK into canonical moniker properties for .NET 10.  The API exposes endpoints to ingest telemetry, retrieve the single turbine, fetch its telemetry history and list recent alarms.
 * **Entity Framework Core** with a simple `Sqlite` database context (`AppDbContext`) for storing turbine metadata, telemetry samples and alarms.  You can switch to SQL Server or PostgreSQL by changing the connection string and provider.
 * **Rule‑based alert engine** that triggers alarms when temperature, vibration or power output exceed configured thresholds on ingestion.
 * **React front‑end** built with functional components.  Because only one turbine is displayed, the front‑end no longer uses React Router; it renders the turbine details directly and uses the Canvas API to draw basic line charts (no external chart library required).
@@ -139,4 +139,4 @@ Production-ready architecture
 💡 Vision
 
 The goal is to evolve this project into a full-featured, production-grade SCADA dashboard for wind turbine monitoring with real-time capabilities, advanced analytics, and scalable architecture.
->>>>>>> 5e0496e6db46042f45eac6fc239f3a38884cdfa6
+
