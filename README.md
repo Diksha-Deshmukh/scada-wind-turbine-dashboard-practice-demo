@@ -155,4 +155,3 @@ Production-ready architecture
 💡 Vision
 
 The goal is to evolve this project into a full-featured, production-grade SCADA dashboard for wind turbine monitoring with real-time capabilities, advanced analytics, and scalable architecture.
->>>>>>> 5e0496e6db46042f45eac6fc239f3a38884cdfa6
