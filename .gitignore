@@ -1,13 +1,21 @@
+# Node
 node_modules/
+
+# .NET
 bin/
 obj/
+
+# VS
 .vs/
 .vscode/
-*.user
-*.suo
-scada.db
-scada.db-shm
-scada.db-wal
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+
+# Build
 client/build/
-client/.env
-backend/scada.db
+
+# Env
+.env
