@@ -1,0 +1,13 @@
+node_modules/
+bin/
+obj/
+.vs/
+.vscode/
+*.user
+*.suo
+scada.db
+scada.db-shm
+scada.db-wal
+client/build/
+client/.env
+backend/scada.db
