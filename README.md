@@ -36,7 +36,7 @@ single_turbine_dashboard/
     │   └── utils/
     │       └── chart.js                  # Simple canvas chart helper
     └── public/
-        └── index.html                    # HTML template
+        └── index.html                    # HTML
 ```
 
 ## Prerequisites
